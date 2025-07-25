@@ -1,0 +1,32 @@
+{
+  "mcpServers": {
+    "langgraph-docs-mcp": {
+      "command": "/Users/praveensrivas/.local/bin/uvx",
+      "args": [
+        "--from",
+        "/Users/praveensrivas/Documents/MCP Server/mcpdoc",
+        "mcpdoc",
+        "--urls",
+        "LangGraph:https://langchain-ai.github.io/langgraph/llms.txt",
+        "--transport",
+        "stdio",
+        "--port",
+        "8082",
+        "--host",
+        "localhost"
+      ]
+    },
+    "docker-shell": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "--init",
+        "-e",
+        "DOCKER_CONTAINER=true",
+        "shellserver-app",
+      ]
+    }
+  }
+}
